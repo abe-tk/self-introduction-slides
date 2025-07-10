@@ -12,6 +12,7 @@ class LaFranceMarathonSlide extends FlutterDeckSlideWidget {
           route: '/la-france-marathon',
           speakerNotes: _speakerNotes,
           title: 'ラ・フランスマラソン',
+          transition: FlutterDeckTransition.rotation(),
         ),
       );
 

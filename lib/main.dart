@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_deck_web_client/flutter_deck_web_client.dart';
-import 'package:self_introduction_slides/slide/before_now_slide.dart';
-import 'package:self_introduction_slides/slide/from_now_slide.dart';
+import 'package:self_introduction_slides/slide/before_now_and_from_now_slide.dart';
 import 'package:self_introduction_slides/slide/hobby_coffee_slide.dart';
 import 'package:self_introduction_slides/slide/hobby_running_slide.dart';
 import 'package:self_introduction_slides/slide/la_france_marathon_slide.dart';
@@ -105,8 +104,7 @@ class SelfIntroductionApp extends StatelessWidget {
         HobbyCoffeeSlide(),
         HobbyRunningSlide(),
         LaFranceMarathonSlide(),
-        BeforeNowSlide(),
-        FromNowSlide(),
+        BeforeNowAndFromNowSlide(),
         FlutterDeckSlide.title(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/end',

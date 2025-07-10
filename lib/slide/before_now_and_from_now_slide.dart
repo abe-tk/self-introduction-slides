@@ -5,13 +5,13 @@ const _speakerNotes = '''
 - 西田さん、やひろさん、金城さんから対戦を申し込んでもらった
 ''';
 
-class BeforeNowSlide extends FlutterDeckSlideWidget {
-  const BeforeNowSlide({super.key})
+class BeforeNowAndFromNowSlide extends FlutterDeckSlideWidget {
+  const BeforeNowAndFromNowSlide({super.key})
     : super(
         configuration: const FlutterDeckSlideConfiguration(
-          route: '/before-now',
+          route: '/before-now-and-from-now',
           speakerNotes: _speakerNotes,
-          title: 'これまで',
+          title: 'これまで これから',
         ),
       );
 
@@ -29,7 +29,7 @@ class BeforeNowSlide extends FlutterDeckSlideWidget {
             padding: const EdgeInsets.all(16),
             child: SizedBox(
               child: Text(
-                'これまで',
+                'これまで と これから',
                 style: FlutterDeckTheme.of(
                   context,
                 ).textTheme.title.copyWith(color: colorScheme.onPrimary),
@@ -39,7 +39,23 @@ class BeforeNowSlide extends FlutterDeckSlideWidget {
         );
       },
       contentBuilder: (context) {
-        return Center();
+        return Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            spacing: 20,
+            children: [
+              Image.asset('assets/images/system.png'),
+              Padding(
+                padding: const EdgeInsets.only(right: 60),
+                child: Text(
+                  'Icons by Icons8',
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
+              ),
+            ],
+          ),
+        );
       },
     );
   }

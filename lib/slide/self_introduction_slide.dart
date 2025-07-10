@@ -12,7 +12,6 @@ class SelfIntroductionSlide extends FlutterDeckSlideWidget {
           route: '/self_introduction',
           speakerNotes: _speakerNotes,
           title: '自己紹介',
-          steps: 6,
         ),
       );
 
