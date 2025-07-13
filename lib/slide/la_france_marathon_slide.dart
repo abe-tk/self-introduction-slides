@@ -46,7 +46,7 @@ class LaFranceMarathonSlide extends FlutterDeckSlideWidget {
             spacing: 40,
             children: [
               Text(
-                'ハーフ（21.0975km） 参加予定！！',
+                'ハーフマラソン(21.0975km) 参加予定（申込済）',
                 style: Theme.of(context).textTheme.displayLarge,
               ),
               Image.asset('assets/images/marathon.png', scale: 0.6),
