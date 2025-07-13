@@ -47,6 +47,8 @@ class HobbyRunningSlide extends FlutterDeckSlideWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Align(child: Image.asset('assets/images/qr.png', scale: 2)),
+                SizedBox(height: 36),
                 Image.asset('assets/images/hukidasi.png'),
                 Image.asset('assets/images/boxer.png'),
               ],
